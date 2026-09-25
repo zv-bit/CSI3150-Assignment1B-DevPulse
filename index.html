@@ -1,32 +1,32 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DevPulse</title>
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
 
-    
+<body>    
 <header>
-    <a href="#logo">DevPulse (add logo)</a>
-<nav>
-    <a href="#temp-info">Add nav button</a>
-    <a href="#temp-info">Add nav button</a>
-    <a href="#temp-info">Add nav button</a>
-    <a href="#temp-info">Add nav button</a>
+    <a href="#">&#9825; DevPulse</a>
+<nav class="nav-menu">
+    <a href="#temp-info" class="nav">Features</a>
+    <a href="#temp-info" class="nav">Pricing</a>
+    <a href="#temp-info" class="nav">Estimate</a>
+
 </nav>
-<a href="#temp-info">"Deploy Free Cluster"</a>
+<a href="#temp-info" class="btn primary">"Deploy Free Cluster"</a>
 </header>
 
 <main>
     <!-- hero -->
-    <section>
-        <h1>claim to fame</h1>
-        <p>proof of value</p>
+    <section class="hero-section">
+        <h1 class="hero-head">Keep a Pulse on your Developments</h1>
+        <p class="hero-sub">Keeping track of all your infrastructure has never been easier</p>
         <div>
-            <a href="#temp-info">Call to action of some sort</a>
-            <a href="#temp-info">some way to make the cta sound better better</a>
+            <a href="#temp-info" class="btn primary">Pre-Register Now!</a>
+            <a href="#temp-info" class="btn">Check our Pricing!</a>
         </div>
     </section>
     
@@ -134,9 +134,9 @@
                 </label>
 
                 <label for="the form as well">
-                    <input type="number" placeholder="log throughput" required>
+                    <input type="number" placeholder="log throughput" min="1" max="1000" required>
                 </label>
-                <span>min and max</span>
+                <span>(1-1000)</span>
                 <button>submit</button>
             </form>
             <span>output from calculator</span>
