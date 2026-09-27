@@ -8,7 +8,7 @@
 </head>
 
 <body>    
-<header>
+<header class="site-header">
     <a href="#">&#9825; DevPulse</a>
 <nav class="nav-menu">
     <a href="#temp-info" class="nav">Features</a>
@@ -31,91 +31,93 @@
     </section>
     
     <!--features section -->
-    <section>
-        <header>
-            <h2>something techy and headliney</h2>
-            <p>something catchy that sells the value</p>
+    <section id="feat" class="sec-con">
+        <header class="sec-head">
+            <h2 class="sec-title">Made From the Ground Up for Home Developers</h2>
+            <p class="subtitle">Easy growth from personal homelab to small digital business!</p>
         </header>
-        <div>             
-            <article>
-                <div>lightning bolt</div>
-                <h3>latency Tracking</h3>
-                <p>something smart</p>
+        <div class="feat-grid">             
+            <article class="feat-card">
+                <div class="icon">&#128274;</div>
+                <h3 class="feat-title">New-Age security</h3>
+                <p class="feat-desc">We split your encrypted data into fractions between all our servers, so if there is a breach on one server, they won't get a thing</p>
             </article>
-            <article>
-                <div>idk a book or smth</div>
-                <h3>log aggregation</h3>
-                <p>something else smart</p>
+            <article class="feat-card">
+                <div class="icon">&#128211;</div>
+                <h3 class="feat-title">Log Aggregation</h3>
+                <p class="feat-desc">Always know who is accessing your database, when they do it, and where they are accessing it from.</p>
             </article>
-            <article>
-                <div>a computer?</div>
-                <h3>auto-remediation</h3>
-                <p>something quite interesting and appealing to the customer</p>
+            <article class="feat-card">
+                <div class="icon">&#128187;</div>
+                <h3 class="feat-title">Always connected</h3>
+                <p class="feat-desc">Using our built-in VPN, you can access your servers from anywhere in the world, with next to no latency</p>
             </article>
         </div>
     </section>
 
-<!--pricing section-->
-    <section>
-        <header>
-            <h3>something tacky about Pricing</h3>
-            <p>Something tackier</p>
+<!--pricing sec-->
+    <section id="pricing" class="sec-con">
+        <header class="sec-head">
+            <h3 class="sec-title">A Price for Everyone!</h3>
+            <p>Upgrade your capacity with your growth!</p>
         </header>
-        <div>
-            <article>
-                <h3>cheapo price</h3>
-                <p>For beginners and cheap people</p>
+        <div class="price-grid">
+            <article class="price-card">
+                <h3 class="tier">Developer</h3>
+                <p class="tier-desc">For those still developing</p>
 
-                <div>
-                    <span>about $3.50</span>
+                <div class="tier-price">
+                    <span class="tier-value">$5 a cluster</span>
+                    <span class="tier-stip">/cluster per month</span> /*stip is stipulation, I'm just too lazy to type it multiple times*/
                 </div>
                 
-                <ul>
-                    <li>Something to entice people</li>
-                    <li>something else to entice</li>
-                    <li>something to make anyone who buys this feel validated</li>
+                <ul class="tier-features">
+                    <li>Test your needs</li>
+                    <li>Only allows those you trust to access</li>
+                    <li>Weekday email support</li>
                 </ul>
 
-                <a href="#temp-info">Button to buy</a>
+                <a href="#sign-up" class="btn">Become a Developer</a>
 
             </article>
-            <article>
+            <article class="price-card featured">
 
-                <div>The one we want you to buy</div>
+                <div class="featured">Most Popular!</div>
 
-                <h3>For the Serious</h3>
-                <p>something motivational</p>
+                <h3 class="tier">Pro Cluster</h3>
+                <p class="tier-desc">For the pros</p>
 
-                <div>
-                    <span>$38</span>
+                <div class="tier-price">
+                    <span class="tier-value">$50</span>
+                    <span class="tier-stip">/month</span>
                 </div>
                 
-                <ul>
-                    <li>Something really enticing</li>
-                    <li>A basic security feature</li>
-                    <li>Something in the cheap tier, +1</li>
-                    <li>Something else</li>
+                <ul class="tier-features">
+                    <li>24/7 email support</li>
+                    <li>VPN access</li>
+                    <li>Allow multiple people to work on the same project</li>
+                    <li>Everything from the previous tier</li>
                 </ul>
 
-                <a href="#temp-info">Something validating</a>
+                <a href="#sign-up" class="btn featured">Get Serious with your Business</a>
 
             </article>
-            <article>
+            <article class="price-card">
 
-                <h3>For the high rollers</h3>
-                <p>something to appeal to big businesses</p>
+                <h3 class="tier">Entreprise Dedicated</h3>
+                <p class="tier-desc">Custom Planning for those with specific needs</p>
 
-                <div>
-                    <span>a billion dollars</span>
+                <div class="tier-price">
+                    <span class="tier-value">Variable Rates</span>
                 </div>
                 
-                <ul>
-                    <li>business speak</li>
-                    <li>business speak</li>
-                    <li>Numbers speak</li>
+                <ul class="tier-features">
+                    <li>Pricing varies on features</li>
+                    <li>Completely Customizable</li>
+                    <li>Weekday Phone & 24/7 email Support</li>
                 </ul>
 
-                <a href="#temp-info">Special button</a>
+                <a href="#sign-up" class="btn">Contact Sales</a>
 
             </article>
         </div>
@@ -179,7 +181,7 @@
 <!-- Footer Section -->
 <footer>
     <div>
-        <p>Copywrite for CSI 3150F26 Assignment1B (version 0.5 (aka, a lot of mindless typing))</p>
+        <p>Copywrite for CSI 3150F26 Assignment1B (version 0.75 (aka, i forgot about this part that I did))</p>
         <nav>
             <a href="#hero">Back to Top</a>
             <a href="#features">features</a>
