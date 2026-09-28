@@ -55,7 +55,7 @@
         </div>
     </section>
 
-<!--pricing sec-->
+<!--pricing section-->
     <section id="pricing" class="sec-con">
         <header class="sec-head">
             <h3 class="sec-title">A Price for Everyone!</h3>
@@ -124,22 +124,28 @@
     </section>
 
 <!--workload estimation -->
-    <section>
-        <div>
-            <header>
-                <h2>Estimate your value to us!</h2>
+    <section id="estimator" class="sec-con">
+        <div class="form-wrap">
+            <header class="sec-head">
+                <h3 class="sec-title">See What Tier Is Right For You!</h2>
             </header>
-            
-            <form action="something,I'm too tired to think of">
-                <label for="the form">node getter
-                    <input type="number" placeholder="# of nodes" required>
-                </label>
 
-                <label for="the form as well">
-                    <input type="number" placeholder="log throughput" min="1" max="1000" required>
-                </label>
-                <span>(1-1000)</span>
-                <button>submit</button>
+            <form action="backend:8080/estimator" method="post" class="est-form">
+                <div class="form-group">
+                    <label for="the form">
+                        How many nodes:
+                        <span class="required-mark"></span>
+                    </label>
+                    <input type="number" name="node-getter" placeholder="# of nodes" class="form-control" required>
+                </div>
+                <div class="form-group">
+                    <label for="the form as well">
+                        Average log throughput:
+                        <input type="number" name="avg-through" placeholder="log throughput" class="form-control" min="1" max="1000" required>
+                    </label>
+                    <span class="input-hint">Min:1 - Max:1000</span>
+                </div>
+                <button type="submit" class="btn primary">submit</button>
             </form>
             <span>output from calculator</span>
         </div>
