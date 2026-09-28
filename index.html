@@ -11,9 +11,9 @@
 <header class="site-header">
     <a href="#">&#9825; DevPulse</a>
 <nav class="nav-menu">
-    <a href="#temp-info" class="nav">Features</a>
-    <a href="#temp-info" class="nav">Pricing</a>
-    <a href="#temp-info" class="nav">Estimate</a>
+    <a href="#features  " class="nav">Features</a>
+    <a href="#pricing" class="nav">Pricing</a>
+    <a href="#estimator" class="nav">Estimate</a>
 
 </nav>
 <a href="#temp-info" class="btn primary">"Deploy Free Cluster"</a>
@@ -21,7 +21,7 @@
 
 <main>
     <!-- hero -->
-    <section class="hero-section">
+    <section id="hero" class="hero-section">
         <h1 class="hero-head">Keep a Pulse on your Developments</h1>
         <p class="hero-sub">Keeping track of all your infrastructure has never been easier</p>
         <div>
@@ -31,7 +31,7 @@
     </section>
     
     <!--features section -->
-    <section id="feat" class="sec-con">
+    <section id="features" class="sec-con">
         <header class="sec-head">
             <h2 class="sec-title">Made From the Ground Up for Home Developers</h2>
             <p class="subtitle">Easy growth from personal homelab to small digital business!</p>
@@ -133,61 +133,63 @@
             <form action="backend:8080/estimator" method="post" class="est-form">
                 <div class="form-group">
                     <label for="the form">
-                        How many nodes:
-                        <span class="required-mark"></span>
+                        How many nodes: 
                     </label>
                     <input type="number" name="node-getter" placeholder="# of nodes" class="form-control" required>
                 </div>
                 <div class="form-group">
                     <label for="the form as well">
-                        Average log throughput:
+                        Average log throughput: 
                         <input type="number" name="avg-through" placeholder="log throughput" class="form-control" min="1" max="1000" required>
                     </label>
                     <span class="input-hint">Min:1 - Max:1000</span>
                 </div>
                 <button type="submit" class="btn primary">submit</button>
             </form>
-            <span>output from calculator</span>
         </div>
     </section>
 
     <!-- sandbox form -->
-     <section>
-        <h2>this is for the sandbox (no real sand)</h2>
-        <form action="to pre-register">
-            <div>
-                <label for="email">
-                    <input type="email" placeholder="abc@xyz.com" required>
-                </label>
-            </div>
-            <div>
-                <label for="company">
-                    <input type="text" placeholder="company name" required>
-                </label>
-            </div>
-            <div>
-                <label for="api usage">
-                    <input type="number" placeholder="projected API usage" required>
-                </label>
-            </div>
-            <div>
-                <select name="the-selector" id="the-selector">
-                    <option value="A">Option A</option>
-                    <option value="B">Option B</option>
-                    <option value="C">Option C</option>
-                </select>
-            </div>
-            <button>submit sandbox</button>
-        </form>
+     <section id="sandbox" class="sec-con">
+        <div class="form-wrap">
+            <h3>See How Our Product Would Work For You!</h2>
+            <form action="backend:8080/sandbox" method="post" class="sandbox">
+                <div>
+                    <label for="email">
+                        Company Email: 
+                        <input type="email" placeholder="abc@xyz.com" required>
+                    </label>
+                </div>
+                <div>
+                    <label for="company">
+                        Company Name: 
+                        <input type="text" placeholder="company name" required>
+                    </label>
+                </div>
+                <div>
+                    <label for="api usage">
+                        API Usage: 
+                        <input type="number" placeholder="projected API usage" required>
+                    </label>
+                </div>
+                <div>
+                    <select name="the-selector" id="the-selector">
+                        <option value="A">Developer</option>
+                        <option value="B">Pro Cluster</option>
+                        <option value="C">Enterprise Dedicated</option>
+                    </select>
+                </div>
+                <button>Submit Sandbox Application</button>
+            </form>
 
-
+        </div>
      </section>
 </main>
 
 <!-- Footer Section -->
 <footer>
     <div>
-        <p>Copywrite for CSI 3150F26 Assignment1B (version 0.75 (aka, i forgot about this part that I did))</p>
+        <p>Copywrite for CSI 3150F26 Assignment1B</p>
         <nav>
             <a href="#hero">Back to Top</a>
             <a href="#features">features</a>
