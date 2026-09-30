@@ -68,8 +68,8 @@
                 <p class="tier-desc">For those still developing</p>
 
                 <div class="tier-price">
-                    <span class="tier-value">$5 a cluster</span>
-                    <span class="tier-stip">/cluster per month</span> /*stip is stipulation, I'm just too lazy to type it multiple times*/
+                    <span class="tier-value">$5</span>
+                    <span class="tier-stip">/ a cluster per month</span>
                 </div>
                 
                 <ul class="tier-features">
@@ -78,19 +78,19 @@
                     <li>Weekday email support</li>
                 </ul>
 
-                <a href="#sign-up" class="btn">Become a Developer</a>
+                <a href="#sign-up" class="btn btn-outline">Become a Developer</a>
 
             </article>
-            <article class="price-card featured">
+            <article class="price-card popular">
 
-                <div class="featured">Most Popular!</div>
+                <div class="pop-tag">Most Popular!</div>
 
                 <h3 class="tier">Pro Cluster</h3>
                 <p class="tier-desc">For the pros</p>
 
                 <div class="tier-price">
                     <span class="tier-value">$50</span>
-                    <span class="tier-stip">/month</span>
+                    <span class="tier-stip">/ month</span>
                 </div>
                 
                 <ul class="tier-features">
@@ -100,7 +100,7 @@
                     <li>Everything from the previous tier</li>
                 </ul>
 
-                <a href="#sign-up" class="btn featured">Get Serious with your Business</a>
+                <a href="#sign-up" class="btn primary">Get Serious with your Business</a>
 
             </article>
             <article class="price-card">
@@ -118,7 +118,7 @@
                     <li>Weekday Phone & 24/7 email Support</li>
                 </ul>
 
-                <a href="#sign-up" class="btn">Contact Sales</a>
+                <a href="#sign-up" class="btn btn-outline">Contact Sales</a>
 
             </article>
         </div>
@@ -131,18 +131,18 @@
                 <h3 class="sec-title">See What Tier Is Right For You!</h2>
             </header>
 
-            <form action="backend:8080/estimator" method="post" class="est-form">
+            <form action="backend:8080/estimator" method="post" class="input-form">
                 <div class="form-group">
-                    <label for="the form">
+                    <label for="node-getter">
                         How many nodes: 
                     </label>
                     <input type="number" name="node-getter" placeholder="# of nodes" class="form-control" required>
                 </div>
                 <div class="form-group">
-                    <label for="the form as well">
+                    <label for="log-getter">
                         Average log throughput: 
-                        <input type="number" name="avg-through" placeholder="log throughput" class="form-control" min="1" max="1000" required>
                     </label>
+                    <input type="number" name="avg-through" id="avg-through" class="form-control" min="1" max="1000" required>
                     <span class="input-hint">Min:1 - Max:1000</span>
                 </div>
                 <button type="submit" class="btn primary">submit</button>
@@ -153,34 +153,37 @@
     <!-- sandbox form -->
      <section id="sandbox" class="sec-con">
         <div class="form-wrap">
-            <h3>See How Our Product Would Work For You!</h2>
-            <form action="backend:8080/sandbox" method="post" class="sandbox">
-                <div>
+            <header class="sec-head">
+                <h3 class="sec-title">See How Our Product Would Work For You!</h2>
+            </header>
+
+            <form action="backend:8080/sandbox" method="post" class="input-form">
+                <div class="form-group">
                     <label for="email">
                         Company Email: 
-                        <input type="email" placeholder="abc@xyz.com" required>
                     </label>
+                    <input type="email" placeholder="abc@xyz.com" class="form-control" required>
                 </div>
-                <div>
+                <div class="form-group">
                     <label for="company">
                         Company Name: 
-                        <input type="text" placeholder="company name" required>
                     </label>
+                    <input type="text" placeholder="company name" class="form-control" required>
                 </div>
-                <div>
+                <div class="form-group">
                     <label for="api usage">
                         API Usage: 
-                        <input type="number" placeholder="projected API usage" required>
                     </label>
+                    <input type="number" placeholder="projected API usage" class="form-control" required>
                 </div>
-                <div>
-                    <select name="the-selector" id="the-selector">
+                <div class="form-group">
+                    <select name="the-selector" class="form-control" id="the-selector">
                         <option value="A">Developer</option>
                         <option value="B">Pro Cluster</option>
                         <option value="C">Enterprise Dedicated</option>
                     </select>
                 </div>
-                <button>Submit Sandbox Application</button>
+                <button class="btn btn-outline">Submit Sandbox Application</button>
             </form>
 
         </div>
@@ -188,10 +191,10 @@
 </main>
 
 <!-- Footer Section -->
-<footer>
-    <div>
+<footer class="site-footer">
+    <div class="footer-container">
         <p>Copywrite for CSI 3150F26 Assignment1B</p>
-        <nav>
+        <nav class="footer-links">
             <a href="#hero">Back to Top</a>
             <a href="#features">features</a>
             <a href="#pricing">Pricing</a>
